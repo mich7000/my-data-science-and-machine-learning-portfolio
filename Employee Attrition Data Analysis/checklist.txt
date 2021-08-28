@@ -1,0 +1,18 @@
+
+
+data cleaning
+eda
+
+distribution
+count
+correlation
+relation
+
+
+
+insight::
+
+* time
+* income 
+* satisfaction
+* discrimination
