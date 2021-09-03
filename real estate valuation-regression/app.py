@@ -14,9 +14,9 @@ l = locale.setlocale(locale.LC_ALL, 'en_US')
 FILE_1 = 'output/model3.pkl'
 model_= load(FILE_1)
 
-
+st.set_page_config(page_title='house price predictor app.')
 # interfaces
-st.header("**Real Estate Valuation (Project 2- Regression)**")
+st.header("Project 2 - Predict the average house price of a given area in Taiwan, New Taipei city.")
 st.image('images/front.jpg') 
 st.subheader("""Sindian District, **New Taipei City**, Taiwan.""")
 
@@ -75,11 +75,11 @@ def main():
     frame1, frame2= st.beta_columns([4, 3])
 
     with frame1:
-        house_age= st.text_input('House Age', 'Please enter a numeric value')
+        house_age= st.text_input('House Age', 0.0)
         number_of_stores = st.selectbox('Number of convenient stores (select 10 if higher)', np.arange(1, 11))
         dist_nearest= st.text_input('Distance to the nearest MRT station', )
-        long= st.text_input('Long', 'Please enter the Longitude')
-        lat = st.text_input('Lat', 'Please enter the Latitude')
+        long= st.slider(label='Longitude', min_value=121.4, max_value=121.6,)
+        lat = st.slider(label= 'Latitude', min_value=24.92, max_value=25.02)
 
     with frame2:
         transac_dayname= st.selectbox("(Week Day) of Transaction: ", ['Sunday' , 'Tuesday', 'Wednesday', 'Thursday', 'Friday','Saturday'])

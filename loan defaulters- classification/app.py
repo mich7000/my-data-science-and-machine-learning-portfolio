@@ -8,20 +8,21 @@ import numpy as np
 # we load the model we built using random forest.
 FILE= 'output/tuned_rf.pkl' 
 model= load(open(FILE, 'rb'))
-
+st.set_page_config(page_title='loan defaulters predictor app.')
 # header and intro code..
 
-st.header("**Project 3 (Classification)**")
+st.header("Project 3 -  Predict where a loan applicant will default a loan or not.")
 st.write("Classify loan applicants into defaulters and non-defaulters.")
 st.image('images/front.jpg')
 st.markdown("""
             Build a model to classify loan applicant to whether they will default a loan or not.
             This web application runs on model built with random forest algorithm.\n
-            The output of the model is binary **[1]** stands for **Approve loan**, **[0]** stands for **Deny loan**.\n
+            
             Thresholds and Metrics
             -----------------------
             **model threshold**: 0.5\n
-            **model accuracy**: 82% (Approx).
+            **f1 score (class 0)**: 59% (Approx).\n
+            **f1 score (class 1)**: 84% (approx)
             """, unsafe_allow_html=True)
             
 st.subheader("**Note**")
@@ -90,7 +91,7 @@ def main():
         property_area = st.radio('Propery Area', ['Rural', 'Urban', 'Semiurban'])
      
     with frame2:
-        appincome= st.text_input( 'Applicant Income', 'type here')
+        appincome= st.text_input( 'Applicant Income', 0.0)
         
         applicant_income_range = st.selectbox("Applicant's Income Range (Choose the appropriate range of Applicant's income )", 
                                                                                                 ['0-12.5K', '12.5K-25K', '25K+'])
@@ -106,7 +107,7 @@ def main():
 
             
         credit_history= st.radio('Applicant Credit History', [0., 1.])
-        coappincome = st.text_input(  "Co-Applicant Income", "type here")
+        coappincome = st.text_input(  "Co-Applicant Income", 0.0)
         coapp_income_range = st.selectbox("Co-Applicant's Income Range (Choose the appropriate range of Co-Applicant's income )", ['0-5K','5K-10K', '10K+', ])
 
         if np.float(coappincome) < 5000:
@@ -119,7 +120,7 @@ def main():
             coapp_income_range ==  '10K+'
 
         loan_amt = st.text_input('Loan Amount',"type here")
-        term_loan_amount = st.text_input('Term of the Loan', 'type here')
+        term_loan_amount = st.text_input('Term of the Loan', 0.)
 
         warn= """Loan's Term Range \n (Please choose the appropriate term range from the **Term of the Loan*** to avoid misclassifcation.)"""
         term_range = st.selectbox(warn, ['200-500', '100-200', '10-100'])
@@ -167,7 +168,8 @@ def main():
                      **Author(s)**: Aboagye Michael, Student, Machine Learning and Data science enthusiast.\n
                      **Last Modified**: 2021-08-17\n
                      **Project type**: Personal
-                   """, unsafe_allow_html=True)
+                   """, unsafe_allow_html=True
+                   )
 
 
 
