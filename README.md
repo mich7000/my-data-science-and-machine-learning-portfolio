@@ -18,28 +18,30 @@ Below are screenshots of some of the web applications I built that runs on machi
 
    It runs on **Random Forest Model** with *cross validation* accuracy around 77% and  *f1 score* around 84%
 
-   <img src= 'screenshots/loan.png' align='right'>
+   ![](screenshots\loan.png)
+
+   
 
    2. *House prices prediction application*
 
-      The motive of this project was to build a regression model to predict a average house prices of a given area in *New Taipei city* given it geo-location and other inputs.
+   The motive of this project was to build a regression model to predict a average house prices of a given area in *New Taipei city* given it geo-location and other inputs.
 
-      I runs on **Decision Tree Model with a Good model evaluation.**
+   I runs on **Decision Tree Model with a Good model evaluation.**
 
-      <img src= 'screenshots/valuation.png' align='left'>
+   ![](screenshots\valuation.PNG)
 
-      <font color='red'> <i>Note that my portfolio is still under construction, I will add new projects in due time</i></font>
+   <font color='red'> <i>Note that my portfolio is still under construction, I will add new projects in due time</i></font>
 
-      
+   
 
-      Email: aboagyemichael14@outlook.com
+   Email: aboagyemichael14@outlook.com
 
-      LinkedIn: https://www.linkedin.com/in/aboagye-michael-ohene-424847183
+   LinkedIn: https://www.linkedin.com/in/aboagye-michael-ohene-424847183
 
-      
+   
 
-       
+    
 
-      
+   
 
    
