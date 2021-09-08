@@ -4,13 +4,14 @@ import streamlit as st
 from joblib import  load
 import pandas as pd
 import numpy as np
+import datetime
 
 # we load the model we built using random forest.
 FILE= 'output/tuned_rf.pkl' 
 model= load(open(FILE, 'rb'))
 st.set_page_config(page_title='loan defaulters predictor app.')
 # header and intro code..
-
+st.write("Today's Date: ", str(datetime.datetime.today()).split()[0])
 st.header("Project 3 -  Predict where a loan applicant will default a loan or not.")
 st.write("Classify loan applicants into defaulters and non-defaulters.")
 st.image('images/front.jpg')
@@ -21,9 +22,10 @@ st.markdown("""
             Thresholds and Metrics
             -----------------------
             **model threshold**: 0.5\n
-            **f1 score (class 0)**: 59% (Approx).\n
-            **f1 score (class 1)**: 84% (approx)
-            """, unsafe_allow_html=True)
+            **f1 score (class N)**: 54% (Approx).\n
+            **f1 score (class Y)**: 84% (Approx)
+            """, 
+            unsafe_allow_html=True)
             
 st.subheader("**Note**")
 st.write("*Please fill all entries before you click the **submit** button in other to avoid any errors*")
@@ -32,48 +34,47 @@ st.write("*Please fill all entries before you click the **submit** button in oth
 def predictor(dependents, 
               education, 
               selfemp,  
-              appincome, 
-              coappincome, 
-              loan_amt, 
-              term_loan_amount,
-              credit_history, 
-              property_area,
-              term_range,
-              applicant_income_range,
-              coapp_income_range, ):
-              
-    new_instance = [dependents, 
-              education, 
-              selfemp,  
-              appincome, 
-              coappincome, 
-              loan_amt, 
-              term_loan_amount,
-              credit_history, 
               property_area,
               term_range,
               applicant_income_range,
               coapp_income_range,
-              ]
+              appincome, 
+              coappincome, 
+              loan_amt,
+              term_loan_amount,
+              credit_history):
+              
+    new_instance = [    dependents, 
+                        education, 
+                        selfemp,  
+                        property_area,
+                        term_range,
+                        applicant_income_range,
+                        coapp_income_range,
+                        appincome, 
+                        coappincome, 
+                        loan_amt,
+                        term_loan_amount,
+                        credit_history]
                      
     new = pd.DataFrame(new_instance, index=['Dependents',
                                             'Education',
-                                             'Self_Employed',
-                                             'ApplicantIncome',
-                                             'CoapplicantIncome',
-                                              'LoanAmount',
-                                              'Loan_Amount_Term',
-                                               'Credit_History',
-                                               'Property_Area',
-                                               'Loan_Amount_Term1',
-                                               'app_income_cut',
-                                                'coapp_income_cut']).T
+                                            'Self_Employed',
+                                            'Property_Area',
+                                            'Loan_Amount_Term1',
+                                            'app_income_cut',
+                                            'coapp_income_cut',
+                                            'ApplicantIncome',
+                                            'CoapplicantIncome',
+                                            'LoanAmount',
+                                            'Loan_Amount_Term',
+                                            'Credit_History',]).T
     prediction= model.predict(new)[0]
     
     if prediction == 0:
-        out = 'Deny Loan Application'
+        out = 'Deny'
     elif prediction == 1:
-        out  = "Approve Loan Application"
+        out  = "Approve"
 
     return out
 
@@ -135,26 +136,26 @@ def main():
     result = str()
     
     if st.button('submit'):
-        result = predictor(dependents, 
+            result = predictor( dependents, 
               education, 
               selfemp,  
-              appincome, 
-              coappincome, 
-              loan_amt, 
-              term_loan_amount,
-              credit_history, 
               property_area,
               term_range,
               applicant_income_range,
-              coapp_income_range,)[:]
-        result = result
+              coapp_income_range,
+              appincome, 
+              coappincome, 
+              loan_amt,
+              term_loan_amount,
+              credit_history)[:]
+            result = result
         
-        st.success('LOAN STATUS: ['+str(result)+']')
+            st.success('LOAN STATUS: '+str(result))
     
     with st.beta_expander('help'):
         
-        info= """  \n [Approve Loan Application] - **Approve** loan application of the client.
-                  \n [Deny Loan Application] - **Deny** loan application of the client.
+        info= """ \n [Approve] - **Approve** loan application of the client.
+                  \n [Deny] - **Deny** loan application of the client.
                   \n The boolean values underneath the range boxes shows if you have selected the right range.
                   \n**true** - indicates you have selected the right range.
                   \n**false** - indicates the range you have selected is incorrect.
@@ -166,7 +167,7 @@ def main():
         about_me = st.markdown(
                    """
                      **Author(s)**: Aboagye Michael, Student, Machine Learning and Data science enthusiast.\n
-                     **Last Modified**: 2021-08-17\n
+                     **Last Modified**: September-2021\n
                      **Project type**: Personal
                    """, unsafe_allow_html=True
                    )

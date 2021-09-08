@@ -1,6 +1,6 @@
 [theme]
-primaryColor= 'steelblue'
+primaryColor= 'green'
 backgroundColor= 'white'
-secondaryBackgroundColor= 'aliceblue'
+secondaryBackgroundColor= '#DAF7A6'
 textColor= 'black'
 font= 'Arial'

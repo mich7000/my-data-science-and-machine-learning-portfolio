@@ -42,29 +42,30 @@ st.header("""Predict the **House Price** of a given area.""")
 st.write('*Please fill every entry provided (and also with the right data type) to avoid any errors.*')
 def predictor(house_age, 
               dist_nearest,
-              number_of_stores,
               lat,
               long,
               transac_yr,
               transac_mth,
-              transac_dayname,):
+              transac_dayname,
+              number_of_stores,):
     
     new_instance = [house_age, 
-              dist_nearest,
-              number_of_stores, 
-              lat,
-              long,
-              transac_yr,
-              transac_mth,
-              transac_dayname,]
+                    dist_nearest,
+                    lat,
+                    long,
+                    transac_yr,
+                    transac_mth,
+                    transac_dayname,
+                    number_of_stores,]
+                    
     new = pd.DataFrame(new_instance, index=['house age',
                                             'dist to nearest MRT',
-                                            'number of convenience stores',
                                             'latitude',
                                             'longitude',
                                             'transaction_year',
                                             'transaction_month',
-                                            'transaction_dayname',]).T
+                                            'transaction_dayname',
+                                            'number of convenience stores',]).T
     prediction= model_.predict(new)[0] * 10000
     return prediction
 
@@ -84,14 +85,21 @@ def main():
     with frame2:
         transac_dayname= st.selectbox("(Week Day) of Transaction: ", ['Sunday' , 'Tuesday', 'Wednesday', 'Thursday', 'Friday','Saturday'])
         transac_mth = st.selectbox('(Month) of Transaction', ['January', 'March', 'April', 'May',  'June','July','August', 'September',  'October', 'November'])
-        transac_yr = st.selectbox('(Year) of Transaction', [2012, 2013])
+        transac_yr = st.selectbox('(Year) of Transaction', ['2012', '2013'])
 
     
     result = ""
     
     
     if st.button('Submit'):
-        result = predictor(house_age,  dist_nearest, number_of_stores,  lat, long,  transac_yr, transac_mth, transac_dayname,)
+        result = predictor(house_age, 
+                    dist_nearest,
+                    lat,
+                    long,
+                    transac_yr,
+                    transac_mth,
+                    transac_dayname,
+                    number_of_stores,)
         result = np.round(result, 2)
         result= locale.format("%.2f", result, grouping= True)
         st.write("Average house price for the given area: ")

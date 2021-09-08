@@ -16,23 +16,12 @@ Employee attrition is one of the major problems most company faces. In this data
 
 * etc.
 
-  
 
 **Tools and softwares**
 
 * Python, Pandas, NumPy, Matplotlib, Seaborn,  Microsoft Word, Microsoft PowerPoint .
 
 * Git and GitHub for version control.
-
-
-
-**Files**
-
-* **attrition_data_analysis.ipynb**: a jupyter notebook files containing the python codes on the data analysis.
-
-* **report-slides.pptx:**  Slides contaning the findings on the data analysis.
-
-
 
 **About me**
 
