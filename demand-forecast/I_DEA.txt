@@ -1,5 +1,0 @@
-
-
-*use the supervised learning time series forescast approach in your main project.
-*save the time series forecat using the traditional approach as a proof of concept.
-*induce or statistical tests and plot in the main project and (the proof of concept project) too.

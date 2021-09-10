@@ -4,13 +4,27 @@
 
 I created this repository to showcase the skills I have acquired during the couple of years of experience in data analytics machine learning and data science.
 
-In this repository you will find projects on **Regression, Classification, Cluster Analysis, Time Series Analysis, Text Analytics, Data Analysis and Other Data Science and ML related projects.**
+In this repository you will find projects on
+
+* Regression 
+
+* Classification
+
+* Cluster Analysis
+
+*  Time Series Analysis,
+
+* Text Analytics
+
+* Data Analysis and Other Data Science and ML related projects.
+
+  
 
 You will also find some projects I did using **SQL** , and some simulations and statistical analysis uisng **R and  Microsoft Excel Spreadsheet**.
 
-Adding up, I also did some **Network Analysis Projects** and some **Dashboarding** using *Dash(Python library for creating Dashboard Applications)*
+Adding up, I also did some **Network Analysis Projects** and some **Dashboarding** using *Dash (Python library for creating Dashboard Applications)*
 
-<h3>Skill Sets</h3>
+<h3>My Skill Sets</h3>
 
 * Data Analysis and Statistical Analysis with Python R and Microsoft Excel.
 * Data Visualization with Tableau and python (Seaborn, Matplotlib, Bokeh)
