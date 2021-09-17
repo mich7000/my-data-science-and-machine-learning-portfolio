@@ -10,3 +10,7 @@ image source:
 
 Map image:: Tableau
 front image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mypacer.com%2Froutes%2F68755%2Flions-head-hiking-trail-xindian-district-new-taipei-city-taiwan-china&psig=AOvVaw3CXjkSepZ2voM3cuMHmvTc&ust=1629976296578000&source=images&cd=vfe&ved=0CAsQjhxqFwoTCNj6rIuFzPICFQAAAAAdAAAAABAD
+
+
+** 
+-unique longitudes and lattitude, encode them...

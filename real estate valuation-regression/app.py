@@ -41,31 +41,39 @@ with my_expander:
 st.header("""Predict the **House Price** of a given area.""")
 st.write('*Please fill every entry provided (and also with the right data type) to avoid any errors.*')
 def predictor(house_age, 
-              dist_nearest,
-              lat,
-              long,
-              transac_yr,
-              transac_mth,
-              transac_dayname,
-              number_of_stores,):
-    
-    new_instance = [house_age, 
                     dist_nearest,
+                    number_of_stores,
                     lat,
                     long,
                     transac_yr,
                     transac_mth,
                     transac_dayname,
-                    number_of_stores,]
+                    house_age_bin,
+                    dist_nearest_bin
+                    ,):
+    
+    new_instance = [house_age, 
+                    dist_nearest,
+                    number_of_stores,
+                    lat,
+                    long,
+                    transac_yr,
+                    transac_mth,
+                    transac_dayname,
+                    house_age_bin,
+                    dist_nearest_bin
+                    ,]
                     
     new = pd.DataFrame(new_instance, index=['house age',
                                             'dist to nearest MRT',
+                                            'number of convenience stores',
                                             'latitude',
                                             'longitude',
                                             'transaction_year',
                                             'transaction_month',
                                             'transaction_dayname',
-                                            'number of convenience stores',]).T
+                                            'house age bins',
+                                            'dist of MRT bins',]).T
     prediction= model_.predict(new)[0] * 10000
     return prediction
 
@@ -77,8 +85,34 @@ def main():
 
     with frame1:
         house_age= st.text_input('House Age', 0.0)
+        house_age_bin=st.selectbox('House Age (Range in Years)', ['0-15', '16-30', '31-45'])
+        if np.float(house_age) >=0 and np.float(house_age) <=15:
+            house_age_bin == '0-15'
+        elif np.float(house_age) >=16 and np.float(house_age) <=30:
+            house_age_bin == '16-30'
+        elif np.float(house_age) >=31 and np.float(house_age) <=45:
+            house_age_bin == '31-45'
+        else:
+            None
+        
         number_of_stores = st.selectbox('Number of convenient stores (select 10 if higher)', np.arange(1, 11))
-        dist_nearest= st.text_input('Distance to the nearest MRT station', )
+        dist_nearest= st.text_input('Distance to the nearest MRT station', 0.0)
+        dist_nearest_bin=st.selectbox('Distance to the nearest MRT station (Range in meters)', ['22m to 1315m', '1316m to 2607m', 
+                                                                                                '2608m to 3901m', '3092m to 5194m','5195m to 6500m'])
+
+        if np.float(dist_nearest) >= 22 and np.float(dist_nearest) <= 1315:
+            dist_nearest_bin == '22m to 1315m'
+        elif np.float(dist_nearest) >= 1316 and np.float(dist_nearest) <= 2607:
+            dist_nearest_bin == '1316m to 2607m'
+        elif np.float(dist_nearest) >= 2608 and np.float(dist_nearest) <= 3901:
+            dist_nearest_bin == '2608m to 3901m' 
+        elif np.float(dist_nearest) >= 3902 and np.float(dist_nearest) <= 5194:
+            dist_nearest_bin == '3902m to 5194m'
+        elif np.float(dist_nearest) >= 5195 and np.float(dist_nearest) <= 6500:
+            dist_nearest_bin == '5195m to 6500m'
+        else:
+            None
+
         long= st.slider(label='Longitude', min_value=121.4, max_value=121.6,)
         lat = st.slider(label= 'Latitude', min_value=24.92, max_value=25.02)
 
@@ -93,13 +127,15 @@ def main():
     
     if st.button('Submit'):
         result = predictor(house_age, 
-                    dist_nearest,
-                    lat,
-                    long,
-                    transac_yr,
-                    transac_mth,
-                    transac_dayname,
-                    number_of_stores,)
+                            dist_nearest,
+                            number_of_stores,
+                            lat,
+                            long,
+                            transac_yr,
+                            transac_mth,
+                            transac_dayname,
+                            house_age_bin,
+                            dist_nearest_bin)
         result = np.round(result, 2)
         result= locale.format("%.2f", result, grouping= True)
         st.write("Average house price for the given area: ")

@@ -33,7 +33,7 @@ Adding up, I also did some **Network Analysis Projects** and some **Dashboarding
 * Data manipulation and ETL with SQL
 * Microsoft PowerPoint, Excel, Word
 
-<font color='red'> <i>Note that my portfolio is still under construction, I will add new projects in due time</i></font>
+<font color> <i>Note that my portfolio is still under construction, I will add new projects in due time</i></font>
 
 
 
