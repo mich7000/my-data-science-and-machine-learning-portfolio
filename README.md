@@ -1,4 +1,4 @@
-<h1>My Data Science and Machine Learning  + Data Analysis Portfolio</h1>
+<h2>My Data Science Portfolio</h2>
 
 <h3>Overview</h3>
 
