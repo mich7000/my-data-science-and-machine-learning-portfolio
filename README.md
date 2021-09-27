@@ -4,7 +4,7 @@
 
 I created this repository to showcase the skills I have acquired during the couple of years of experience in data analytics machine learning and data science.
 
-In this repository you will find projects on
+In this repository you will find projects on:
 
 * Regression 
 

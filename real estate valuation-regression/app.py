@@ -86,6 +86,8 @@ def main():
     with frame1:
         house_age= st.text_input('House Age', 0.0)
         house_age_bin=st.selectbox('House Age (Range in Years)', ['0-15', '16-30', '31-45'])
+
+        # house age group validation
         if np.float(house_age) >=0 and np.float(house_age) <=15:
             house_age_bin == '0-15'
         elif np.float(house_age) >=16 and np.float(house_age) <=30:
@@ -97,8 +99,11 @@ def main():
         
         number_of_stores = st.selectbox('Number of convenient stores (select 10 if higher)', np.arange(1, 11))
         dist_nearest= st.text_input('Distance to the nearest MRT station', 0.0)
+
         dist_nearest_bin=st.selectbox('Distance to the nearest MRT station (Range in meters)', ['22m to 1315m', '1316m to 2607m', 
                                                                                                 '2608m to 3901m', '3092m to 5194m','5195m to 6500m'])
+        
+        # validation for "distance nearest "
 
         if np.float(dist_nearest) >= 22 and np.float(dist_nearest) <= 1315:
             dist_nearest_bin == '22m to 1315m'
