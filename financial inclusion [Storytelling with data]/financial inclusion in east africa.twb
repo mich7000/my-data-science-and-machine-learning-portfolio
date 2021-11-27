@@ -1,0 +1,1975 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.0123.1906                               -->
+<workbook original-version='18.1' source-build='2019.1.0 (20191.19.0123.1906)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Heatmap />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource inline='true' name='Clipboard_20211027T140624' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data' name='textscan.1ua6rvb11mnj50102hot01ed3i62'>
+            <connection class='textscan' directory='C:/Users/michael/Documents/GitHub/my-data-science-and-machine-learning-portfolio/financial inclusion [Storytelling with data]/data' filename='data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ua6rvb11mnj50102hot01ed3i62' name='data.csv' table='[data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='string' name='Bank account' ordinal='2' />
+            <column datatype='string' name='Location Type' ordinal='3' />
+            <column datatype='string' name='Access to cellphone' ordinal='4' />
+            <column datatype='integer' name='Household size' ordinal='5' />
+            <column datatype='integer' name='Age of respondent' ordinal='6' />
+            <column datatype='string' name='Gender of respondent' ordinal='7' />
+            <column datatype='string' name='Relation with head of the house' ordinal='8' />
+            <column datatype='string' name='Marital status' ordinal='9' />
+            <column datatype='string' name='Education level' ordinal='10' />
+            <column datatype='string' name='Job type' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank account</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bank account]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>Bank account</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location Type]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>Location Type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Access to cellphone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Access to cellphone]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>Access to cellphone</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Household size</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Household size]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>Household size</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age of respondent</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age of respondent]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>Age of respondent</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender of respondent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender of respondent]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>Gender of respondent</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Relation with head of the house</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Relation with head of the house]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>Relation with head of the house</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Marital status]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>Marital status</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Education level]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>Education level</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job type]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>Job type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Age of respondent (copy) (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Age of respondent (copy)]' peg='0' size='5.47' />
+      </column>
+      <column datatype='integer' name='[Age of respondent (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Age of respondent]' />
+      </column>
+      <column caption='YOUTH' datatype='string' name='[Age of respondent (group) 1]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Age of respondent]' default='&quot;Older&quot;' new-bin='true'>
+          <bin default-name='false' value='&quot;Youth Ages&quot;'>
+            <value>16</value>
+            <value>17</value>
+            <value>18</value>
+            <value>19</value>
+            <value>20</value>
+            <value>21</value>
+            <value>22</value>
+            <value>23</value>
+            <value>24</value>
+            <value>25</value>
+            <value>26</value>
+            <value>27</value>
+            <value>28</value>
+            <value>29</value>
+            <value>30</value>
+            <value>31</value>
+            <value>32</value>
+            <value>33</value>
+            <value>34</value>
+            <value>35</value>
+            <value>36</value>
+            <value>37</value>
+            <value>38</value>
+            <value>39</value>
+            <value>40</value>
+            <value>41</value>
+            <value>42</value>
+            <value>43</value>
+            <value>44</value>
+          </bin>
+        </calculation>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Age of respondent]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Bank account]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Education level (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Education level]' new-bin='true'>
+          <bin default-name='false' value='&quot;Formal Education&quot;'>
+            <value>&quot;Primary education&quot;</value>
+            <value>&quot;Secondary education&quot;</value>
+            <value>&quot;Tertiary education&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Specialised training&quot;'>
+            <value>&quot;Vocational/Specialised training&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Education level]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Gender of respondent]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Household size (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Household size]' peg='0' size='2.32' />
+      </column>
+      <column datatype='string' name='[Household size (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Household size]' new-bin='true' />
+      </column>
+      <column datatype='integer' name='[Household size]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Job type (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Job type]' new-bin='true'>
+          <bin default-name='false' value='&quot;Dependent&quot;'>
+            <value>&quot;Government Dependent&quot;</value>
+            <value>&quot;Remittance Dependent&quot;</value>
+            <value>&quot;Self employed&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Employed&quot;'>
+            <value>&quot;Formally employed Government&quot;</value>
+            <value>&quot;Formally employed Private&quot;</value>
+            <value>&quot;Informally employed&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Others&quot;'>
+            <value>&quot;Dont Know/Refuse to answer&quot;</value>
+            <value>&quot;Farming and Fishing&quot;</value>
+            <value>&quot;Other Income&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Job type]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Marital status]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[diff:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Columns' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Bank account]' derivation='None' name='[none:Bank account:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Education level]' derivation='None' name='[none:Education level:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender of respondent]' derivation='None' name='[none:Gender of respondent:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Marital status]' derivation='None' name='[none:Marital status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcdf:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Columns' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:10]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:11]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:4]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Field' type='PctTotal'>
+          <order field='[Clipboard_20211027T140624].[none:Bank account:nk]' />
+          <order field='[Clipboard_20211027T140624].[none:Country:nk]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:6]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Pane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:7]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Field' type='PctTotal'>
+          <order field='[Clipboard_20211027T140624].[none:Bank account:nk]' />
+          <order field='[Clipboard_20211027T140624].[none:Marital status:nk]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:9]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='ColumnInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (Bank account,Household size (group))]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Bank account:nk]' />
+          <groupfilter function='level-members' level='[Household size (group)]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Inclusions (Bank account,Education level (group))]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Bank account:nk]' />
+          <groupfilter function='level-members' level='[Education level (group)]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.712162' measure-ordering='alphabetic' measure-percentage='0.287838' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Gender of respondent:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk:4]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk:7]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[Clipboard_20211027T140624].[diff:sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[Clipboard_20211027T140624].[none:Bank account:nk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[Clipboard_20211027T140624].[pcdf:sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk:10]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk:11]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk:3]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk:6]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk:9]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[Clipboard_20211027T140624].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Education level:nk]' type='palette'>
+            <map to='#767f8b'>
+              <bucket>&quot;Vocational/Specialised training&quot;</bucket>
+            </map>
+            <map to='#989ca3'>
+              <bucket>&quot;Tertiary education&quot;</bucket>
+            </map>
+            <map to='#b3b7b8'>
+              <bucket>&quot;Secondary education&quot;</bucket>
+            </map>
+            <map to='#d3d3d3'>
+              <bucket>&quot;No formal education&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Primary education&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Other/Dont know/RTA&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Job type (group)]' type='palette'>
+            <map to='#57606c'>
+              <bucket>&quot;Dependent&quot;</bucket>
+            </map>
+            <map to='#7b848f'>
+              <bucket>&quot;Employed&quot;</bucket>
+            </map>
+            <map to='#d3d3d3'>
+              <bucket>&quot;Others&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;No Income&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Education level (group)]' type='palette'>
+            <map to='#7b848f'>
+              <bucket>&quot;No formal education&quot;</bucket>
+            </map>
+            <map to='#c8d0d9'>
+              <bucket>&quot;Specialised training&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Formal Education&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Bank account:nk]' type='palette'>
+            <map to='#c85200'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+            <map to='#d3d3d3'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Age of respondent (group) 1]' type='palette'>
+            <map to='#57606c'>
+              <bucket>&quot;Youth Ages&quot;</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>&quot;Older&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='INTRO'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Clipboard_20211027T140624' />
+          </datasources>
+          <datasource-dependencies datasource='Clipboard_20211027T140624'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[Clipboard_20211027T140624].[sum:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9DE380A0-6172-44C5-BDFC-31159F0BE7A5}' />
+    </worksheet>
+    <worksheet name='JOB'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Clipboard_20211027T140624' />
+          </datasources>
+          <datasource-dependencies datasource='Clipboard_20211027T140624'>
+            <column datatype='string' name='[Bank account]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job type (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Job type]' new-bin='true'>
+                <bin default-name='false' value='&quot;Dependent&quot;'>
+                  <value>&quot;Government Dependent&quot;</value>
+                  <value>&quot;Remittance Dependent&quot;</value>
+                  <value>&quot;Self employed&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Employed&quot;'>
+                  <value>&quot;Formally employed Government&quot;</value>
+                  <value>&quot;Formally employed Private&quot;</value>
+                  <value>&quot;Informally employed&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Others&quot;'>
+                  <value>&quot;Dont Know/Refuse to answer&quot;</value>
+                  <value>&quot;Farming and Fishing&quot;</value>
+                  <value>&quot;Other Income&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Job type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Bank account]' derivation='None' name='[none:Bank account:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[Clipboard_20211027T140624].[Job type (group)]' direction='DESC' using='[Clipboard_20211027T140624].[sum:Number of Records:qk]' />
+          <filter class='categorical' column='[Clipboard_20211027T140624].[none:Bank account:nk]'>
+            <groupfilter function='member' level='[none:Bank account:nk]' member='&quot;Yes&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[Clipboard_20211027T140624].[none:Bank account:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='display' class='0' field='[Clipboard_20211027T140624].[sum:Number of Records:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[Clipboard_20211027T140624].[Job type (group)]' value='Employment Status'>
+              <formatted-text>
+                <run>Employment Status</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[Clipboard_20211027T140624].[none:Bank account:nk]' value='Has Bank Account?'>
+              <formatted-text>
+                <run>Has Bank Account?</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[Clipboard_20211027T140624].[Job type (group)]' />
+              <text column='[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk:3]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.14193369448184967' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[Clipboard_20211027T140624].[sum:Number of Records:qk]</cols>
+      </table>
+      <simple-id uuid='{8BCD744E-3DC1-4437-821C-A15963A66410}' />
+    </worksheet>
+    <worksheet name='age'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Clipboard_20211027T140624' />
+          </datasources>
+          <datasource-dependencies datasource='Clipboard_20211027T140624'>
+            <column caption='YOUTH' datatype='string' name='[Age of respondent (group) 1]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Age of respondent]' default='&quot;Older&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Youth Ages&quot;'>
+                  <value>16</value>
+                  <value>17</value>
+                  <value>18</value>
+                  <value>19</value>
+                  <value>20</value>
+                  <value>21</value>
+                  <value>22</value>
+                  <value>23</value>
+                  <value>24</value>
+                  <value>25</value>
+                  <value>26</value>
+                  <value>27</value>
+                  <value>28</value>
+                  <value>29</value>
+                  <value>30</value>
+                  <value>31</value>
+                  <value>32</value>
+                  <value>33</value>
+                  <value>34</value>
+                  <value>35</value>
+                  <value>36</value>
+                  <value>37</value>
+                  <value>38</value>
+                  <value>39</value>
+                  <value>40</value>
+                  <value>41</value>
+                  <value>42</value>
+                  <value>43</value>
+                  <value>44</value>
+                </bin>
+              </calculation>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Age of respondent]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Bank account]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Age of respondent]' derivation='None' name='[none:Age of respondent:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Bank account]' derivation='None' name='[none:Bank account:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[Clipboard_20211027T140624].[none:Bank account:nk]'>
+            <groupfilter function='member' level='[none:Bank account:nk]' member='&quot;Yes&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[Clipboard_20211027T140624].[none:Bank account:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[Clipboard_20211027T140624].[sum:Number of Records:qk]' scope='rows' value='Number of People' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='dotted' />
+            <format attr='stroke-size' scope='rows' value='3' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[Clipboard_20211027T140624].[Age of respondent (group) 1]' value='Age Group'>
+              <formatted-text>
+                <run>Age Group</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[Clipboard_20211027T140624].[none:Bank account:nk]' value='Has bank account'>
+              <formatted-text>
+                <run>Has bank account</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[Clipboard_20211027T140624].[Age of respondent (group) 1]' />
+            </encodings>
+            <reference-line axis-column='[Clipboard_20211027T140624].[none:Age of respondent:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='medianconfidence' id='refline1' label-type='none' paired-distribution-id='refline2' probability='95' scope='per-pane' show-lines='both' symmetric='false' value-column='[Clipboard_20211027T140624].[none:Age of respondent:qk]' z-order='1' />
+            <reference-line axis-column='[Clipboard_20211027T140624].[none:Age of respondent:qk]' enable-instant-analytics='true' formula='median' id='refline2' label-type='automatic' paired-distribution-id='refline1' probability='95' scope='per-pane' value-column='[Clipboard_20211027T140624].[none:Age of respondent:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.99950277805328369' />
+                <format attr='mark-transparency' value='239' />
+                <format attr='density-kernel-size' value='0.66966849565505981' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='468' />
+                <format attr='maxwidth' value='468' />
+                <format attr='minheight' value='707' />
+                <format attr='maxheight' value='707' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[Clipboard_20211027T140624].[sum:Number of Records:qk]</rows>
+        <cols>([Clipboard_20211027T140624].[Age of respondent (group) 1] * [Clipboard_20211027T140624].[none:Age of respondent:qk])</cols>
+      </table>
+      <simple-id uuid='{2A6E5F17-3481-4565-AADA-393E3F52AC94}' />
+    </worksheet>
+    <worksheet name='country/education level'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759' fontsize='10'>Most people with bank account tends to have a from of education with formal education dominating.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Clipboard_20211027T140624' />
+          </datasources>
+          <datasource-dependencies datasource='Clipboard_20211027T140624'>
+            <column datatype='string' name='[Bank account]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Education level (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Education level]' new-bin='true'>
+                <bin default-name='false' value='&quot;Formal Education&quot;'>
+                  <value>&quot;Primary education&quot;</value>
+                  <value>&quot;Secondary education&quot;</value>
+                  <value>&quot;Tertiary education&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Specialised training&quot;'>
+                  <value>&quot;Vocational/Specialised training&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Education level]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Bank account]' derivation='None' name='[none:Bank account:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:6]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Pane' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[Clipboard_20211027T140624].[Education level (group)]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Education level (group)]' />
+              <groupfilter function='member' level='[Education level (group)]' member='&quot;Other/Dont know/RTA&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[Clipboard_20211027T140624].[none:Bank account:nk]'>
+            <groupfilter function='member' level='[none:Bank account:nk]' member='&quot;Yes&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[Clipboard_20211027T140624].[none:Country:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Kenya&quot;</bucket>
+              <bucket>&quot;Rwanda&quot;</bucket>
+              <bucket>&quot;Tanzania&quot;</bucket>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[Clipboard_20211027T140624].[Education level (group)]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[Clipboard_20211027T140624].[sum:Number of Records:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[Clipboard_20211027T140624].[Education level (group)]</column>
+            <column>[Clipboard_20211027T140624].[none:Bank account:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[Clipboard_20211027T140624].[sum:Number of Records:qk]' value='31' />
+            <format attr='display' class='0' field='[Clipboard_20211027T140624].[sum:Number of Records:qk]' scope='cols' value='false' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[Clipboard_20211027T140624].[Education level (group)]' value='29' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[Clipboard_20211027T140624].[Education level (group)]' value='Education level' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[Clipboard_20211027T140624].[Education level (group)]' />
+              <text column='[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk:6]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([Clipboard_20211027T140624].[none:Country:nk] / [Clipboard_20211027T140624].[Education level (group)])</rows>
+        <cols>[Clipboard_20211027T140624].[sum:Number of Records:qk]</cols>
+      </table>
+      <simple-id uuid='{42C1B7C5-3322-461B-A713-9C5EE883353F}' />
+    </worksheet>
+    <worksheet name='has bank account'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Clipboard_20211027T140624' />
+          </datasources>
+          <datasource-dependencies datasource='Clipboard_20211027T140624'>
+            <column datatype='string' name='[Bank account]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Bank account]' derivation='None' name='[none:Bank account:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[Clipboard_20211027T140624].[none:Bank account:nk]' direction='DESC' using='[Clipboard_20211027T140624].[sum:Number of Records:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='display' class='0' field='[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[Clipboard_20211027T140624].[sum:Number of Records:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[Clipboard_20211027T140624].[sum:Number of Records:qk]' value='right' />
+            <format attr='height' value='441' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#666666' />
+            <format attr='font-size' value='9' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[Clipboard_20211027T140624].[none:Bank account:nk]' value='Has Bank Account' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[Clipboard_20211027T140624].[none:Bank account:nk]' />
+              <text column='[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.9890055656433105' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[Clipboard_20211027T140624].[sum:Number of Records:qk]</cols>
+      </table>
+      <simple-id uuid='{A5177592-AD5F-4BA6-B4A5-B36C645994F4}' />
+    </worksheet>
+    <worksheet name='year changes (country)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759' fontsize='10'>Countries and the proportion of individuals with bank account.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Clipboard_20211027T140624' />
+          </datasources>
+          <datasource-dependencies datasource='Clipboard_20211027T140624'>
+            <column datatype='string' name='[Bank account]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Bank account]' derivation='None' name='[none:Bank account:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:11]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='CellInPane' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[Clipboard_20211027T140624].[none:Country:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Kenya&quot;</bucket>
+              <bucket>&quot;Rwanda&quot;</bucket>
+              <bucket>&quot;Tanzania&quot;</bucket>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[Clipboard_20211027T140624].[sum:Number of Records:qk]' scope='cols' value='false' />
+            <format attr='tick-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[Clipboard_20211027T140624].[none:Country:nk]' value='79' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[Clipboard_20211027T140624].[none:Bank account:nk]' value='Has Bank Account'>
+              <formatted-text>
+                <run>Has Bank Account</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[Clipboard_20211027T140624].[none:Bank account:nk]' />
+              <text column='[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk:11]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.6811602115631104' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[Clipboard_20211027T140624].[none:Country:nk]</rows>
+        <cols>[Clipboard_20211027T140624].[sum:Number of Records:qk]</cols>
+      </table>
+      <simple-id uuid='{A69C8AC7-11FB-4454-97DA-A0E6229684CF}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='STORY' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#c85200' fontname='Arial' fontsize='20'>Solving the problem with financial inclusion in</run>
+            <run fontcolor='#ff5500' fontname='Arial' fontsize='20'>Æ </run>
+            <run bold='true' fontcolor='#000000' fontname='Arial' fontsize='20'>East </run>
+            <run fontcolor='#000000' fontname='Arial' fontsize='20'>Africa.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='story-description'>
+          <format attr='border-style' id='story-description_10' value='none' />
+          <format attr='font-style' id='story-description_10' value='normal' />
+          <format attr='font-weight' id='story-description_10' value='normal' />
+          <format attr='text-decoration' id='story-description_10' value='none' />
+          <format attr='background-color' id='story-description_12' value='#c85200' />
+          <format attr='background-color' id='story-description_13' value='#f5f5f5d9' />
+          <format attr='border-style' id='story-description_11' value='none' />
+          <format attr='text-align' id='story-description_11' value='left' />
+          <format attr='border-color' id='story-description_9' value='#ff5500' />
+          <format attr='background-color' id='story-description_17' value='#00000000' />
+          <format attr='border-style' id='story-description_17' value='none' />
+          <format attr='border-style' id='story-description_14' value='none' />
+          <format attr='background-color' id='story-description_15' value='#ffffffd9' />
+          <format attr='border-style' id='story-description_15' value='none' />
+          <format attr='background-color' id='story-description_16' value='#ffffffd9' />
+          <format attr='border-style' id='story-description_16' value='none' />
+          <format attr='border-style' id='story-description_9' value='none' />
+          <format attr='text-align' id='story-description_9' value='left' />
+          <format attr='vertical-align' id='story-description_9' value='top' />
+          <format attr='background-color' id='story-description_10' value='#00000000' />
+          <format attr='background-color' id='story-description_11' value='#00000000' />
+          <format attr='background-color' id='story-description_14' value='#00000000' />
+          <format attr='background-color' id='story-description_18' value='#00000000' />
+          <format attr='border-style' id='story-description_18' value='none' />
+          <format attr='background-color' id='story-description_22' value='#00000000' />
+          <format attr='border-style' id='story-description_22' value='none' />
+          <format attr='background-color' id='story-description_9' value='#00000000' />
+          <format attr='background-color' id='story-description_23' value='#00000000' />
+          <format attr='border-style' id='story-description_23' value='none' />
+          <format attr='background-color' id='story-description_24' value='#00000000' />
+          <format attr='border-style' id='story-description_24' value='none' />
+          <format attr='background-color' id='story-description_25' value='#00000000' />
+          <format attr='border-style' id='story-description_25' value='none' />
+        </style-rule>
+      </style>
+      <size maxheight='900' maxwidth='1709' minheight='900' minwidth='1709' preset-index='2' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='20' param='vert' removable='false' type='layout-flow' w='99064' x='468' y='889'>
+            <zone h='5000' id='21' type='title' w='99064' x='468' y='889'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93222' id='7' param='vert' removable='false' type='layout-flow' w='99064' x='468' y='5889'>
+              <zone h='93222' id='1' param='vert' removable='false' type='layout-flow' w='99064' x='468' y='5889'>
+                <zone fixed-size='250' h='27778' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='99064' x='468' y='5889' />
+                <zone h='65444' id='5' paired-zone-id='4' removable='false' type='flipboard' w='99064' x='468' y='33667'>
+                  <flipboard active-id='7' nav-type='caption' show-nav-arrows='true'>
+                    <story-points>
+                      <story-point caption='Financial inclusion is a real problem in East Africa. But it can be minimize when proper strategies are adopted to solve this issue.' captured-sheet='INTRO' id='7' />
+                      <story-point caption='The data shows that, for every 1000 poeple only 140 is likely to have a bank account.' captured-sheet='has bank account' id='1' />
+                      <story-point caption='Younger ages tends to be more interested in using the banking service.' captured-sheet='age' id='2' />
+                      <story-point caption='A form of education , not just formal education might get the people informed about the perks of using banking services.' captured-sheet='edu' id='11' />
+                      <story-point caption='Individual&apos;s employment or  income status plays a major role.' captured-sheet='JOB' id='9'>
+                        <capturedDeltas>
+                          <worksheet name='JOB'>
+                            <annotations>
+                              <annotation class='point' delta-type='added' id='0' mark-position='1' pullback='12' text-width='180'>
+                                <formatted-text>
+                                  <run fontcolor='#e15759'>Æ </run>
+                                  <run bold='true' fontcolor='#e15759'>&lt;[Clipboard_20211027T140624].[Job type (group)]&gt;</run>
+                                  <run>Æ&#10;</run>
+                                  <run fontcolor='#000000' fontsize='12'>&lt;[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk]&gt;</run>
+                                </formatted-text>
+                                <point>
+                                  <visual-coordinate class='mark'>
+                                    <tuple-reference>
+                                      <tuple-descriptor>
+                                        <pane-descriptor>
+                                          <x-fields />
+                                          <y-fields>
+                                            <field>[Clipboard_20211027T140624].[sum:Number of Records:qk]</field>
+                                          </y-fields>
+                                        </pane-descriptor>
+                                        <columns>
+                                          <field>[Clipboard_20211027T140624].[Job type (group)]</field>
+                                          <field>[Clipboard_20211027T140624].[sum:Number of Records:qk]</field>
+                                          <field>[Clipboard_20211027T140624].[pcto:sum:Number of Records:qk]</field>
+                                        </columns>
+                                      </tuple-descriptor>
+                                      <tuple>
+                                        <value>&quot;No Income&quot;</value>
+                                        <value>13</value>
+                                        <value>0.00392512077294686</value>
+                                      </tuple>
+                                    </tuple-reference>
+                                  </visual-coordinate>
+                                </point>
+                                <body x='238' y='8' />
+                              </annotation>
+                            </annotations>
+                            <style delta-type='added'>
+                              <style-rule element='annotation'>
+                                <format attr='fill-color' id='addedDelta_annotation_0' value='#f5f5f5' />
+                                <format attr='line-end' id='addedDelta_annotation_0' value='arrow' />
+                                <format attr='line-end-size' id='addedDelta_annotation_0' value='smaller' />
+                                <format attr='line-pattern-only' id='addedDelta_annotation_0' value='solid' />
+                                <format attr='line-visibility' id='addedDelta_annotation_0' value='on' />
+                                <format attr='rounding' id='addedDelta_annotation_0' value='small' />
+                                <format attr='stroke-color' id='addedDelta_annotation_0' value='#c0c0c0' />
+                              </style-rule>
+                            </style>
+                          </worksheet>
+                        </capturedDeltas>
+                      </story-point>
+                      <story-point caption='By skillfully using the recommended  solutions  might help  reduce the financial inclusion problem in this part of Africa continent. ' captured-sheet='INTRO' id='8' />
+                    </story-points>
+                  </flipboard>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='13333' hidden='true' id='16' story-point-id='9' type='text' w='21475' x='995' y='48556'>
+          <formatted-text>
+            <run bold='true' fontalignment='0' fontcolor='#c85200' fontsize='10'>No income</run>
+            <run fontalignment='0' fontsize='10'> individuals were the least to use the banking services with other employment status dominating.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='42333' id='9' story-point-id='7' type='text' w='69573' x='14453' y='33333'>
+          <formatted-text>
+            <run bold='true' fontcolor='#c85200' fontname='Segoe UI Light' fontsize='18'>Analysis</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Segoe UI Light' fontsize='12'>The data reveals that, less than </run>
+            <run bold='true' fontcolor='#000000' fontname='Segoe UI Light' fontsize='12'>15%</run>
+            <run fontcolor='#000000' fontname='Segoe UI Light' fontsize='12'> of citizens in</run>
+            <run bold='true' fontcolor='#000000' fontname='Segoe UI Light' fontsize='12'> Uganda, Tanzania, Rwanda and Kenya </run>
+            <run fontcolor='#000000' fontname='Segoe UI Light' fontsize='12'>uses the banking services.</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Segoe UI Light' fontsize='12'>This is very unfortunate because, banking services is one of the major player in the economic growth in many countries, having few individuals with interest in banking activities may hinder the growth, development  and also  the financial stability in these countries. </run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#c85200' fontname='Segoe UI Light' fontsize='18'>What if there are ways to minimize this prolem of financial inclusion?</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000' fontname='Segoe UI Light' fontsize='12'>By </run>
+            <run bold='true' fontcolor='#000000' fontname='Segoe UI Light' fontsize='12'>improving the standard of living</run>
+            <run fontcolor='#000000' fontname='Segoe UI Light' fontsize='12'> of citizens in the country and also by</run>
+            <run bold='true' fontcolor='#000000' fontname='Segoe UI Light' fontsize='12'> informing</run>
+            <run fontcolor='#000000' fontname='Segoe UI Light' fontsize='12'> the masses about the</run>
+            <run bold='true' fontcolor='#000000' fontname='Segoe UI Light' fontsize='12'> merit of using the banking services</run>
+            <run fontcolor='#000000' fontname='Segoe UI Light' fontsize='12'> through proper public education and  advertisement could  spike the percentage of people with bank account and there also improving the economic status of these countries.</run>
+            <run>Æ&#10;&#10;&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='34111' hidden='true' id='18' story-point-id='2' type='text' w='24283' x='60152' y='37444'>
+          <formatted-text>
+            <run fontalignment='0' fontsize='10'>Ages between 20 to 45 are the most likely to use the banking services, but they are in lower numbers as compared to those in the same age bracket who are not using the banking service.</run>
+            <run fontalignment='0'>Æ&#10;&#10;</run>
+            <run fontalignment='0' fontsize='10'>With proper education about the importance of using banking service and also by improving the standard of living of these individuals, the number of people who&apos;re interested using the banking services may increase. </run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='9111' id='22' story-point-id='7' type='text' w='33002' x='14277' y='81556'>
+          <formatted-text>
+            <run fontalignment='0' fontcolor='#000000' fontname='Segoe UI Light' fontsize='10' underline='true'>Information</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Segoe UI Light' fontsize='9'>The data was collected in the eastern part of Africa as the target.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Segoe UI Light' fontsize='9'>It was collected from the year 2016 through to the year 2018. </run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Segoe UI Light' fontsize='9'>Inference made using this data may not be implicitly applicable to other African countries as a whole.</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='11333' hidden='true' id='23' story-point-id='11' type='text' w='21826' x='2633' y='81000'>
+          <formatted-text>
+            <run fontalignment='0' fontsize='10'>There is some visible relationship between education and percentage of individual who use the banking services.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' h='10667' hidden='true' id='24' story-point-id='9' type='text' w='31890' x='55178' y='73111'>
+          <formatted-text>
+            <run fontalignment='0' fontsize='10'>Improving the standard of living of these individual may cause them to be more interested in using the banking services, thereby increasing the percentage of people with access to the bank service.</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='29000' hidden='true' id='25' story-point-id='8' type='text' w='46635' x='22528' y='37111'>
+          <formatted-text>
+            <run bold='true' fontalignment='0' fontcolor='#c85200' fontsize='20'>Educate</run>
+            <run fontalignment='0' fontsize='20'> the masses about the merits of using banking services.</run>
+            <run fontalignment='0'>Æ&#10;&#10;&#10;</run>
+            <run fontalignment='0' fontsize='20'>Improve the </run>
+            <run bold='true' fontalignment='0' fontcolor='#c85200' fontsize='20'>Standard of living</run>
+            <run fontalignment='0' fontsize='20'> of the individuals.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{E02E68DA-3558-4E01-991C-2684D26B6E4B}' />
+    </dashboard>
+    <dashboard name='edu'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98168' id='7' param='horz' type='layout-flow' w='80353' x='9842' y='916'>
+            <zone h='98168' id='5' type='layout-basic' w='80353' x='9842' y='916'>
+              <zone h='98168' id='3' name='country/education level' w='47872' x='42323' y='916'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98168' id='9' name='year changes (country)' w='32481' x='9842' y='916'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='98168' id='12' type='layout-flow' w='9322' x='90195' y='916'>
+            <zone h='10653' id='8' name='country/education level' pane-specification-id='0' param='[Clipboard_20211027T140624].[Education level (group)]' type='color' w='9322' x='90195' y='916'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='98168' id='37' type='layout-flow' w='9359' x='483' y='916'>
+            <zone h='8247' id='10' name='year changes (country)' pane-specification-id='0' param='[Clipboard_20211027T140624].[none:Bank account:nk]' type='color' w='9359' x='483' y='916'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='142' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='143' param='vert' type='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='98168' id='9' is-fixed='true' name='year changes (country)' w='32481' x='9842' y='916'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8247' id='10' name='year changes (country)' pane-specification-id='0' param='[Clipboard_20211027T140624].[none:Bank account:nk]' type='color' w='9359' x='483' y='916'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98168' id='3' is-fixed='true' name='country/education level' w='47872' x='42323' y='916'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10653' id='8' name='country/education level' pane-specification-id='0' param='[Clipboard_20211027T140624].[Education level (group)]' type='color' w='9322' x='90195' y='916'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{595DB1AE-D9E5-4316-92F1-44BCC800C801}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' maximized='true' name='STORY' tab-color='#17927d'>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{F4C7BF95-036E-4E94-B243-ED31D8FD965D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='INTRO' tab-color='#a65200'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[Clipboard_20211027T140624].[Job type (group)]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{62E46BEC-97A0-4CA1-B115-DC675AD0BF33}' />
+    </window>
+    <window class='worksheet' hidden='true' name='JOB' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[Clipboard_20211027T140624].[none:Bank account:nk]' type='filter' />
+            <card pane-specification-id='0' param='[Clipboard_20211027T140624].[Job type (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[Clipboard_20211027T140624].[Job type (group)]</field>
+            <field>[Clipboard_20211027T140624].[none:Bank account:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BBC7CDAF-D367-42D7-948A-E425633D42D0}' />
+    </window>
+    <window class='worksheet' hidden='true' name='age' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[Clipboard_20211027T140624].[none:Bank account:nk]' type='filter' />
+            <card pane-specification-id='0' param='[Clipboard_20211027T140624].[Age of respondent (group) 1]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[Clipboard_20211027T140624].[Age of respondent (group) 1]</field>
+            <field>[Clipboard_20211027T140624].[none:Bank account:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{7A6CDBA3-BDCB-4D96-A189-EF1DAE960CA6}' />
+    </window>
+    <window class='worksheet' hidden='true' name='country/education level' tab-color='#dec77b'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='230'>
+            <card mode='checkdropdown' param='[Clipboard_20211027T140624].[none:Bank account:nk]' type='filter' />
+            <card pane-specification-id='0' param='[Clipboard_20211027T140624].[Education level (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[Clipboard_20211027T140624].[Education level (group)]</field>
+            <field>[Clipboard_20211027T140624].[none:Bank account:nk]</field>
+            <field>[Clipboard_20211027T140624].[none:Country:nk]</field>
+            <field>[Clipboard_20211027T140624].[none:Education level:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CA901CCD-A180-4BF9-9854-B69BCFD254E9}' />
+    </window>
+    <window class='dashboard' hidden='true' name='edu' tab-color='#dec77b'>
+      <viewpoints>
+        <viewpoint name='country/education level'>
+          <highlight>
+            <color-one-way>
+              <field>[Clipboard_20211027T140624].[Education level (group)]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='year changes (country)'>
+          <highlight>
+            <color-one-way>
+              <field>[Clipboard_20211027T140624].[none:Bank account:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{6FB34B22-50B1-4CCE-B524-77F15222032E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='has bank account' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='169'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[Clipboard_20211027T140624].[none:Bank account:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[Clipboard_20211027T140624].[none:Bank account:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{7EC47C1C-4F17-45F3-BED7-C6F2EAE550E4}' />
+    </window>
+    <window class='worksheet' hidden='true' name='year changes (country)' tab-color='#a65200'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card pane-specification-id='0' param='[Clipboard_20211027T140624].[none:Bank account:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[Clipboard_20211027T140624].[none:Bank account:nk]</field>
+            <field>[Clipboard_20211027T140624].[none:Country:nk]</field>
+            <field>[Clipboard_20211027T140624].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F95123CA-DD64-4055-84EC-A63DB7A6BAA6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='STORY' width='192'>
+      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
+      XhmvR2R3/4jxmRnSRwfgjrI+HWF3/4RAJEYkGMTjlhEcEr1KlXAshkf2YHf6CLgEDJsTUdAY
+      qnaUXhc5GMT+CRwGrF6gtzC0EZlSiVtjk+//5J+9iquzE0qVOqm1+wRl055V/oNkBcBiaua+
+      BrCYnhUAi6lZAbCYmhUAi6lZAbCYmhUAi6lZAbCYmhUAi6lZAbCYmhUAi6lZAbCYmhUAi6lZ
+      AbCYmhUAi6lZAbCYmhUAi6lZAbCYmhUAi6lZAbCYmhUAi6lZAbCYmhUAi6lZAbCYmhUAi6lZ
+      AbCYmhUAi6lZAbCYmhUAi6lZAbCYmhUAi6lZAbCYmhUAi6lZAQD67Tr11j/+JUEtP8+cK8To
+      Krsnl0S8IoIzwOHjV1h/9nkKuSLzCzPk8jV8LoPuyMag32Hu9gynx6eEQl6Oz4tMz04hql1w
+      BZEdBsVqi/nb05/2Xlk+AtMGYOfwlJE6JOD24HQ46Q0HzM9Nsft4C3wp9O45hk0kNTtBsaAy
+      VJsIgh3ZIdPsV/EGbqF1azR6PZbGvAzD88Tdn/aOWT4sU6/o5vPKSDYRA3AIBvsHx7i8Hmxe
+      GfAxsom4JCeF9DWBhBOH5KDerGB3OakVrhAcTjw+Ly7ZQVf7tPfG8lGY8ghQq9XY2dn5WOu8
+      d+8ePp/vY63T8otnygBYLG8wZS+QoSk8evSIQrFApdx82jMoFkoAaNqAdnv0kbZTLBTerOcN
+      jddXaH/DqFWg2odOu8NbF0hvNhsUi4UPtJ1+o8GHa6FBs9F62yOZ9CWDkYqujtjZOWTYa5DO
+      VdE1hW7//XvIeo0GlUKB4TseH3QaDN7j9FAZDej23vmqT44prwEEu4NQJEI05OXx1iGVopPr
+      XInk9DzzSRdn+Ra6Dvn0IarbhWQfZ9g4ITyzgqx2qLXa6A4/IQ8cp8v4nLC8tkGnnqczENBG
+      HVRFxS4HEEcttne2CQWDyIEQrWaZgOwmm8sTTs7gVsoEF5K0q3W6Z2eMDDvrmytcnp+g2+w0
+      ilm6hoNqvsAv/cpXSO+/xlWhy92VaQ5P83jddryCDd3nIZ/J4nB4uDUToVYYEE7GGIuK7O+W
+      cAWdGN0yXV1ElEJovS7PPrfG4cEhqgrDQZ/Y+C0qhSyaoVGtlShc1Wh3k9Bv4vT6CLodPD66
+      5CsvfIF8+pSTbB2XHVY3NihdXdLSNYR6HZsyIl8ssbzxLNTSqEGVs53X8PjGiYadDDUY9gbU
+      qxUkt5tIcpql1IdZnPzj8/8Akrg59BT5tJcAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

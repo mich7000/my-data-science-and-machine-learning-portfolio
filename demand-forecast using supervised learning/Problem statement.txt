@@ -1,0 +1,4 @@
+
+Problem:
+---------
+Forecast the next of demand **for each products** on store for the next 12 month in the test data using the train data.

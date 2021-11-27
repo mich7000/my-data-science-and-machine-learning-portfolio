@@ -1,0 +1,12 @@
+Variable Definitions,
+Country,Country interviewee is in.
+Year,Year survey was done in.
+Locaton Type,"Type of location: Rural, Urban"
+Access to cellphone,"If interviewee has access to a cellphone: Yes, No"
+Household size,Number of people living in one house
+Age of respondent,The age of the interviewee
+Gender of respondent,"Gender of interviewee: Male, Female"
+Relation with head of the house,"The interviewee’s relationship with the head of the house:Head of Household, Spouse, Child, Parent, Other relative, Other non-relatives, Dont know"
+Marital Status,"The martial status of the interviewee: Married/Living together, Divorced/Seperated, Widowed, Single/Never Married, Don’t know"
+Education Level,"Highest level of education: No formal education, Primary education, Secondary education, Vocational/Specialised training, Tertiary education, Other/Dont know/RTA"
+Job type,"Type of job interviewee has: Farming and Fishing, Self employed, Formally employed Government, Formally employed Private, Informally employed, Remittance Dependent, Government Dependent, Other Income, No Income, Dont Know/Refuse to answer"

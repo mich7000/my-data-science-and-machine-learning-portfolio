@@ -10,6 +10,7 @@ import datetime
 FILE= 'output/tuned_rf.pkl' 
 model= load(open(FILE, 'rb'))
 st.set_page_config(page_title='loan defaulters predictor app.')
+
 # header and intro code..
 st.write("Today's Date: ", str(datetime.datetime.today()).split()[0])
 st.header("Project 3 -  Predict where a loan applicant will default a loan or not.")
@@ -43,6 +44,7 @@ def predictor(dependents,
               loan_amt,
               term_loan_amount,
               credit_history):
+
               
     new_instance = [    dependents, 
                         education, 
@@ -79,11 +81,11 @@ def predictor(dependents,
     return out
 
 
-# application interface code...
+# application interface code.
 def main():
     
 
-    frame1, frame2= st.beta_columns([4, 6])
+    frame1, frame2= st.columns([4, 6])
     
     with frame1:
         dependents = st.selectbox('Dependents', ['0', '1', '2', '3+'])
@@ -137,22 +139,22 @@ def main():
     
     if st.button('submit'):
             result = predictor( dependents, 
-              education, 
-              selfemp,  
-              property_area,
-              term_range,
-              applicant_income_range,
-              coapp_income_range,
-              appincome, 
-              coappincome, 
-              loan_amt,
-              term_loan_amount,
-              credit_history)[:]
+                                education, 
+                                selfemp,  
+                                property_area,
+                                term_range,
+                                applicant_income_range,
+                                coapp_income_range,
+                                appincome, 
+                                coappincome, 
+                                loan_amt,
+                                term_loan_amount,
+                                credit_history)[:]
             result = result
         
             st.success('LOAN STATUS: '+str(result))
     
-    with st.beta_expander('help'):
+    with st.expander('help'):
         
         info= """ \n [Approve] - **Approve** loan application of the client.
                   \n [Deny] - **Deny** loan application of the client.
@@ -163,7 +165,7 @@ def main():
         st.success(info)
 
 
-    with st.beta_expander('About'):
+    with st.expander('About'):
         about_me = st.markdown(
                    """
                      **Author(s)**: Aboagye Michael, Student, Machine Learning and Data science enthusiast.\n
@@ -171,9 +173,6 @@ def main():
                      **Project type**: Personal
                    """, unsafe_allow_html=True
                    )
-
-
-
 
 # activates the app.   
 if __name__=='__main__':

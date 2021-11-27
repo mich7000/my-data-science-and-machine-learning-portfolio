@@ -21,7 +21,7 @@ st.image('images/front.jpg')
 st.subheader("""Sindian District, **New Taipei City**, Taiwan.""")
 
 st.header("**Brief Analysis**") 
-my_expander = st.beta_expander(label="Click to Exapnd")
+my_expander = st.expander(label="Click to Exapnd")
 with my_expander:
            st.markdown("""
            The chart above shows house prices across **Taipei city**.
@@ -81,7 +81,7 @@ def predictor(house_age,
 # main program where ML computations occurs..
 def main():
     
-    frame1, frame2= st.beta_columns([4, 3])
+    frame1, frame2= st.columns([4, 3])
 
     with frame1:
         house_age= st.text_input('House Age', 0.0)

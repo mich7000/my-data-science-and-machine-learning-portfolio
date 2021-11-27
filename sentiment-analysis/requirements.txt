@@ -1,0 +1,8 @@
+python 3
+dash
+nltk
+spacy
+scikit-learn
+streamlit
+wordcloud
+matploltib

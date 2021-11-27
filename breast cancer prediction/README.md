@@ -1,35 +1,24 @@
-# Breast Cancer Prediction
+# breast cancer prediction
 
-**Objective:**
+**Overview**
 
-Predict whether a patient has a or likely to have breast cancer.
+The aim of the project was to predict whether a patient has breast cancer or not. 
 
-**Data Description**:
+* The data used to build this model was downloaded from the UCI machine learning repository. 
 
- *Number of Instances:* 286
+* The variable description is found in the folder named "**data**"
 
-*Number of Attributes:* 9 + the class attribute
+**Pipeline**
 
-*Attribute Information:*
-
-1. Class: no-recurrence-events, recurrence-events
-2. age: 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99.
-3. menopause: lt40, ge40, premeno.
-4. tumor-size: 0-4, 5-9, 10-14, 15-19, 20-24, 25-29, 30-34, 35-39, 40-44, 45-49, 50-54, 55-59.
-5. inv-nodes: 0-2, 3-5, 6-8, 9-11, 12-14, 15-17, 18-20, 21-23, 24-26, 27-29, 30-32, 33-35, 36-39.
-6. node-caps: yes, no.
-7. deg-malig: 1, 2, 3.
-8. breast: left, right.
-9. breast-quad: left-up, left-low, right-up,	right-low, central.
-
-  10. irradiat:	yes, no.
-
-*Class Distribution:*
-
-       1. no-recurrence-events: 201 instances
-       2. recurrence-events: 85 instances
+1. Load, inspect and preprocess the data.
+2. Perform Exploratory Data Analysis on the data.
+3. Split the data into training and testing set.
+4. Encode the categorical variables and scale the numeric variable.
+5. Train different algorithms on the data and choose the best performing model.
+6. Tune the best performing model.
+7. Save the model for future development or even for deployment.
 
 **Model accuracy**
 
-74.5%
+74.5% to 75%
 
