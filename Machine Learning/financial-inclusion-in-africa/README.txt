@@ -6,8 +6,8 @@ data
 ---
 * the data was downloaded from "zindi competition website", financial inclusion competition.
 
-number of rows:33,610
-number of columns:13
+number of rows: 33,610
+number of columns: 13
 missing value: present
 
 requirement

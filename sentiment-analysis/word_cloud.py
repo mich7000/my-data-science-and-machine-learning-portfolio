@@ -18,4 +18,4 @@ def show_wordcloud(token, title = None, max_word= 5):
         fig.subplots_adjust(top=2.3)
 
     plt.imshow(wordcloud)
-    plt.show()
+    
