@@ -1,4 +1,4 @@
-# breast cancer prediction
+# Breast cancer prediction
 
 **Overview**
 
@@ -8,7 +8,7 @@ The aim of the project was to predict whether a patient has breast cancer or not
 
 * The variable description is found in the folder named "**data**"
 
-**Pipeline**
+**MODEL BUILDNING ROUTINE**
 
 1. Load, inspect and preprocess the data.
 2. Perform Exploratory Data Analysis on the data.
@@ -18,7 +18,7 @@ The aim of the project was to predict whether a patient has breast cancer or not
 6. Tune the best performing model.
 7. Save the model for future development or even for deployment.
 
-**Model accuracy**
+**Model accuracy**: 76%
 
-74.5% to 75%
+
 

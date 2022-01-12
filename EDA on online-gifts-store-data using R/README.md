@@ -1,6 +1,6 @@
 
 
-#### EDA on Online Retail Data...
+#### EXPLORATORY DATA ANALYSIS ON ONLINE GIFT STORE
 
 <img src="images\gifts-store.png" style="zoom:80%;" align="left" />
 

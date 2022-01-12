@@ -1,6 +1,6 @@
 [theme]
-primaryColor= 'purple'
+primaryColor= 'lightgrey'
 backgroundColor= 'white'
-secondaryBackgroundColor= '#CBC3E3'
+secondaryBackgroundColor= 'lightgrey'
 textColor= 'black'
 font= 'Arial'

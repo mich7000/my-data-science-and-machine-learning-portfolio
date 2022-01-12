@@ -1,0 +1,10 @@
+test for equal means (test for zero means)
+test for equal variance
+test for correlations
+confidence interval
+
+
+
+test for the relationship between categorical variables on a numeric variable.(chi-square)
+test for normality
+

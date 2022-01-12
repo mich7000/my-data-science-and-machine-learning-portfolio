@@ -1,6 +1,5 @@
 
 # adjusted mean absolute percentage error
-
 def smape(pred, target):
     import numpy as np
 

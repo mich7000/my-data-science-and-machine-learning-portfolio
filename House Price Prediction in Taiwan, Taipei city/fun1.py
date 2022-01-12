@@ -1,7 +1,6 @@
 
 # test for outliers
 
-
 def modified_zscore(obs):
     """
     Computes the threshold to detect extreme values in a distribution

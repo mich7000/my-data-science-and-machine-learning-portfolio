@@ -1,0 +1,12 @@
+
+Steps in building a time series forecast with SARIMAX
+1. load, clean and transform the data.
+2. test of randomness
+3. test for stationarity
+4. perform feature engineering
+5. stationarize the time series data if it is not staionary
+6. split the data to train and test set
+7. add exogenous variables to the SARIMAX model
+8. fit the model and make predictions
+9. compare prediciton with the actual values
+10. evaluate your predicitons

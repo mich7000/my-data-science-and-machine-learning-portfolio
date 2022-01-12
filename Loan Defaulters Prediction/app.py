@@ -13,12 +13,13 @@ st.set_page_config(page_title='loan defaulters predictor app.')
 
 # header and intro code..
 st.write("Today's Date: ", str(datetime.datetime.today()).split()[0])
-st.header("Project 3 -  Predict where a loan applicant will default a loan or not.")
+st.header("Project 3 -  Predict whether a loan applicant will default a loan in the future.")
 st.write("Classify loan applicants into defaulters and non-defaulters.")
 st.image('images/front.jpg')
+
 st.markdown("""
             Build a model to classify loan applicant to whether they will default a loan or not.
-            This web application runs on model built with random forest algorithm.\n
+            This web application runs on model built with random forest algorithm.<hr>
             
             Thresholds and Metrics
             -----------------------
@@ -27,6 +28,7 @@ st.markdown("""
             **f1 score (class Y)**: 84% (Approx)
             """, 
             unsafe_allow_html=True)
+st.markdown("""<hr>""", unsafe_allow_html=True)
             
 st.subheader("**Note**")
 st.write("*Please fill all entries before you click the **submit** button in other to avoid any errors*")
@@ -111,7 +113,8 @@ def main():
             
         credit_history= st.radio('Applicant Credit History', [0., 1.])
         coappincome = st.text_input(  "Co-Applicant Income", 0.0)
-        coapp_income_range = st.selectbox("Co-Applicant's Income Range (Choose the appropriate range of Co-Applicant's income )", ['0-5K','5K-10K', '10K+', ])
+        coapp_income_range = st.selectbox("Co-Applicant's Income Range (Choose the appropriate range of Co-Applicant's income )",
+                                           ['0-5K','5K-10K', '10K+', ])
 
         if np.float(coappincome) < 5000:
             coapp_income_range == '0-5K'
@@ -153,7 +156,7 @@ def main():
             result = result
         
             st.success('LOAN STATUS: '+str(result))
-    
+ 
     with st.expander('help'):
         
         info= """ \n [Approve] - **Approve** loan application of the client.
