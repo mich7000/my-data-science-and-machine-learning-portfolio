@@ -4,7 +4,7 @@
 
 
 
-This repo contains basic statistical tools and methodology employed in solving business analytics related problem.
+This repository contains basic statistical tools and methodology employed in solving business analytics related problem.
 
 **Such technique includes:**
 
