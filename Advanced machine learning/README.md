@@ -4,7 +4,7 @@ These to folders contain a supervised machine learning project which is beyond b
 
 
 
-In both project the fundamental model building approach such as:
+**In both project the fundamental model building approach such as:**
 
 * Package inspection (as in checking the quality of the dataset).
 * Cleaning the data and making it suitable for modeling.
@@ -16,8 +16,6 @@ In both project the fundamental model building approach such as:
 * Serializing the model for deployment.
 
 
-
-//
 
 You can view the notebook (code) right away be opening  the **html version** of the notebook file.
 
