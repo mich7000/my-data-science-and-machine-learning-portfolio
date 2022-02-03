@@ -19,11 +19,15 @@ model_= load(FILE_1)
 st.set_page_config(page_title='house price predictor app.')
 
 # interfaces
-st.markdown("""<font size=5.5><b>Project 2</b> - Predict the average house price of a given area in Taiwan, New Taipei city.</font>""", unsafe_allow_html=True)
+st.markdown("""<font size=5.5><b>Project 2</b> - Predict the average house price of a given area in Taiwan, New Taipei city.</font>""", 
+    unsafe_allow_html=True)
 st.image('images/front.jpg') 
-st.markdown("""<i>Sindian District, New Taipei City, Taiwan.</i>""", unsafe_allow_html=True)
+st.markdown("""<i>Sindian District, New Taipei City, Taiwan.</i>""", 
+    unsafe_allow_html=True)
 
-st.markdown("""<font size=4><b>Brief Analysis</font></b>""", unsafe_allow_html=True) 
+st.markdown("""<font size=4><b>Brief Analysis</font></b>""", 
+    unsafe_allow_html=True) 
+
 my_expander = st.expander(label="Click to Exapnd")
 with my_expander:
            st.markdown("""
@@ -41,11 +45,15 @@ with my_expander:
         
         
         
-st.markdown("""<font size=5>Predict the **House Price** of a given area.</font>""", unsafe_allow_html=True)
+st.markdown("""<font size=5>Predict the **House Price** of a given area.</font>""", 
+    unsafe_allow_html=True)
 st.write('*Please fill every entry provided (and also with the right data type) to avoid any errors.*')
 
+
+
 def predictor(house_age,  dist_nearest, number_of_stores, ):
-    new_instance = [house_age,  dist_nearest, number_of_stores, ]
+    new_instance = [house_age,  
+                    dist_nearest, number_of_stores, ]
     new = pd.DataFrame(new_instance, index=['house age', 'dist to nearest MRT', 'number of convenience stores',]).T
     prediction= model_.predict(new)[0] * 10000
     return prediction

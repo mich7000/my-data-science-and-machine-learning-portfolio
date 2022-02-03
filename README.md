@@ -2,13 +2,13 @@
 
 
 
-<h3>Overview</h3>
+<h3><u>Overview</u></h3>
 
 This GitHub repository contains data analytics and machine learning projects such as **linear regression, supervised segmentation, data visualization and dashboard building with Tableau and Microsoft Excel data analysis and storytelling** e.tc.
 
 
 
-<h3>Programming languages and Software</h3>
+<h3><u>Programming languages and Software</u></h3>
 
 * Python (Anaconda Distribution)
 
@@ -22,7 +22,7 @@ This GitHub repository contains data analytics and machine learning projects suc
 
   
 
-<h3>Data Science Topics</h3>
+<h3><u>Topics</u></h3>
 
 * Regression analysis
 * Supervised segmentation (Classification)
@@ -35,7 +35,7 @@ This GitHub repository contains data analytics and machine learning projects suc
 
 
 
-<h3> Personal Information</h3>
+<h3><u>Personal Information</u></h3>
 
 **Email:** aboagyemichael14@outlook.com
 
