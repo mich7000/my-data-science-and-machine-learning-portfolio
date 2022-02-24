@@ -1,0 +1,14 @@
+* confidence interval
+* Analysis of variance
+
+**hypothesis testing:
+  correlation, 
+   diffrences in mean, 
+   differences in proportion, 
+   diffrences in total
+
+* chebychev's theorem
+* test for normality
+* test for equal variance
+* test for correlation
+

@@ -1,13 +1,6 @@
 
-
+# Computes the modified z score
 def modified_zscore(obs):
-
-    """
-    Computes the threshold to detect extreme values in a distribution.
-    
-    modified_zscore = zscore/MAD
-    MAD is the mean absolute devaition
-    """
 
     import numpy as np
     from maths import pow
@@ -17,20 +10,17 @@ def modified_zscore(obs):
     mean = np.mean(obs)
     median = np.median(obs)
     
-    sumsqdiff = np.sum(pow((obs - median),2))
+    sumsqdiff = np.sum(pow((obs - median),2)) # sum of square difference
     sqrtdiff = np.sqrt(sumsqdiff)
     
-    mad= np.median(sqrtdiff)
+    mad= np.median(sqrtdiff) # mean absolute deviation
     modzscore = (0.6745 * sumsqdiff) / mad
  
     return modzscore
-    
+ 
+# Visualize the variable for outliers    
 def makeplot(series):
     
-    """
-    create visualization of the outliers detected.
-    """
-
     import numpy as np
     import matplotlib.pyplot as plt
     plt.figure(figsize=(10, 4))

@@ -4,7 +4,7 @@
 
 <h3><u>Overview</u></h3>
 
-This GitHub repository contains data analytics and machine learning projects such as **linear regression, supervised segmentation, data visualization and dashboard building with Tableau and Microsoft Excel data analysis and storytelling** e.tc.
+This GitHub repository contains data analytics and machine learning projects such as **regression, supervised segmentation, data visualization and dashboard building with Tableau and Microsoft Excel data analysis and storytelling** e.tc.
 
 
 
@@ -24,7 +24,7 @@ This GitHub repository contains data analytics and machine learning projects suc
 
 <h3><u>Topics</u></h3>
 
-* Regression analysis
+* Regression modeling
 * Supervised segmentation (Classification)
 * Time Series analysis
 * Application of supervised learning in text analytics

@@ -1,8 +1,0 @@
-confidence interval
-anova
-hypothesis testing (correlation, diffrences in mean, differences in proportion, diffrences in total)
-chebychev's theorem
-test for normality
-test for variance
-test for correlation
-
