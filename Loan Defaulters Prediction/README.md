@@ -24,7 +24,7 @@ Target variable: binary
 
 
 
-**Type**
+**Machine Learning Task**
 
 Classification
 
@@ -36,7 +36,7 @@ Python: Pandas, numpy, matplotlib's pyplot, scikit learn, seaborn, and other pyt
 
 
 
-**Method**
+**Methodology**
 
 - data loading, inspection and cleaning
 - missing value handling
